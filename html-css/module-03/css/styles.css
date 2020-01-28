@@ -1,0 +1,133 @@
+/* * {
+    outline: red 1px solid;
+} */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "playfair display", "ubuntu";
+  color: #626262;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* header styles */
+
+.page-header {
+  background-color: #ffffff;
+  padding: 71px 0 36px 0;
+  font-size: 0;
+  }
+.page-nav {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 24px;
+}
+.site-navigation {
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 24px;
+}
+
+.site-navigation li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+.site-navigation li:not(:last-child) {
+  margin-right: 107px;
+}
+
+.site-navigation a {
+  font-size: 14px;
+  color: #626262;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #03a9f4;
+}
+
+/* container styles */
+
+.page-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.page-container-item {
+  padding: 60px 0 0 0;
+  margin: 0 0 60px 0;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 14px;
+  width: 420px;
+}
+.page-container-item h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container-item:nth-child(2n) {
+  margin-left: 60px;
+}
+.post-tag {
+  font-family: "ubuntu", sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.post-text {
+  padding: 0;
+  margin: 32px 0 0 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.lmore-btn {
+  text-align: center;
+  color: #626262;
+  font-size: 20px;
+  line-height: 24px;
+  width: 164px;
+  height: 60px;
+  border: 1px solid #626262;
+  background-color: #ffffff;
+  margin-left: 368px;
+  margin-right: 368px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.lmore-btn:hover, .lmore-btn:focus {
+  color: #03a9f4;
+  border-color: #03a9f4;
+}
