@@ -31,15 +31,13 @@ img {
 
 .page-header {
   background-color: #ffffff;
-  padding: 71px 0;
+  padding: 71px 0 106px 0;
   font-size: 0;
-  margin-bottom: 35px;
 }
 .page-nav {
   margin: 0;
   padding: 0;
   font-size: 0;
-  height: 24px;
 }
 .site-navigation {
   list-style: none;
@@ -47,7 +45,6 @@ img {
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 24px;
 }
 
 .site-navigation li {
@@ -84,7 +81,7 @@ img {
 }
 .page-container-item {
   padding: 0;
-  margin: 0 60px 120px 0;
+  margin-bottom: 120px;
   vertical-align: top;
   display: inline-block;
   font-size: 14px;
@@ -97,8 +94,8 @@ img {
   padding: 0;
 }
 
-.page-container-item:nth-child(2n) {
-  margin-right: 0;
+.page-container-item:nth-child(2n + 1) {
+  margin-right: 60px;
 }
 .page-container-item:nth-last-child(-n + 2) {
   margin-bottom: 0px;
@@ -115,9 +112,12 @@ img {
   margin: 32px 0 0 0;
   font-size: 14px;
   line-height: 24px;
+  height: 72px;
+  overflow: hidden;
 }
 
 .lmore-btn {
+  display: block;
   text-align: center;
   color: #626262;
   font-size: 20px;
@@ -127,9 +127,9 @@ img {
   border: 1px solid #626262;
   background-color: #ffffff;
   margin-top: 60px;
-  margin-right: 368px;
+  margin-right: auto;
   margin-bottom: 70px;
-  margin-left: 368px;
+  margin-left: auto;
   cursor: pointer;
 }
 .lmore-btn:hover,
