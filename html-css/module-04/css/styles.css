@@ -1,0 +1,287 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  padding-top: 43px;
+  padding-bottom: 90px;
+}
+
+.site-logo {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 32px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #555252;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.site-logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.page-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.page-navigation-menu {
+  margin: 0;
+  padding: 10px 0 0 0;
+  float: right;
+  list-style: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.page-navigation-item {
+  float: right;
+  padding: 0 17px 0 17px;
+}
+
+.page-navigation-item:first-child {
+  padding-right: 0;
+}
+
+.nav-buttons {
+  display: block;
+  line-height: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0f0101;
+}
+
+.nav-buttons:hover,
+.nav-buttons:focus {
+  color: #1abc9c;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 32px;
+  padding-top: 21px;
+  color: #515151;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header::after {
+  display: block;
+  content: "";
+  width: 164px;
+  height: 7px;
+  margin: 32px auto 92px auto;
+  background-color: #1abc9c;
+}
+.products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.products-item {
+  width: 255px;
+  height: 322px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.products-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.products-item a {
+  display: block;
+}
+
+.photo-link {
+  height: 282px;
+  width: 255px;
+  background-color: #e9f0fd;
+}
+
+.photo-link img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-price {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.product-name {
+  float: left;
+  font-family: "Roboto", sans-serif;
+  padding-left: 14px;
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  width: 201px;
+  height: 40px;
+  margin: 0;
+  color: #ffffff;
+  background-color: #323232;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.product-price {
+  float: left;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding-left: 12px;
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  width: 54px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #8c8c8c;
+}
+.products-item:hover .product-name {
+  background-color: #1abc9c;
+}
+
+.products-item:focus .product-name {
+  background-color: #1abc9c;
+}
+
+.products-item:hover .product-price {
+  background-color: #7fd9c7;
+}
+
+.products-item:hover .product-price {
+  background-color: #7fd9c7;
+}
+
+.latest-news {
+  margin: 0;
+  padding: 0;
+}
+
+.header-news {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 32px;
+  padding-top: 77px;
+  color: #555252;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-news::after {
+  display: block;
+  content: "";
+  width: 164px;
+  height: 7px;
+  margin: 32px auto 81px auto;
+  background-color: #4ec6ab;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-item {
+  width: 350px;
+  float: left;
+  margin-right: 30px;
+}
+
+.news-item:last-child {
+  margin-right: 0;
+}
+
+.news-item h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #555252;
+  padding: 8px 0 0 0;
+  margin: 0;
+}
+
+.news-item h4::after {
+  display: block;
+  content: "";
+  width: 136px;
+  height: 3px;
+  margin-top: 11px;
+  background-color: #4ec6ab;
+  margin-bottom: 26px;
+}
+
+.news-item p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #555252;
+  margin: 0 0 13px 0;
+}
+
+.rmore-btn {
+  display: block;
+  padding: 0;
+  width: 160px;
+  height: 51px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: capitalize;
+  background-color: #4ec6ab;
+  border: 1px solid #4ec6ab;
+  border-radius: 2px;
+  cursor: pointer;
+}
