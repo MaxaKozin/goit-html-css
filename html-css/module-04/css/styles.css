@@ -151,6 +151,7 @@ img {
 .name-price {
   text-decoration: none;
   display: block;
+  background-color: #323232;
   margin: 0;
   padding: 0;
 }
@@ -167,7 +168,7 @@ img {
   height: 40px;
   margin: 0;
   color: #ffffff;
-  background-color: #323232;
+
   text-transform: uppercase;
   text-align: left;
 }
@@ -184,22 +185,11 @@ img {
   width: 54px;
   height: 40px;
   color: #ffffff;
-  background-color: #8c8c8c;
+  background-color: rgba(255, 255, 255, 0.439);
 }
-.products-item:hover .product-name {
+
+.products-item:hover .name-price {
   background-color: #1abc9c;
-}
-
-.products-item:focus .product-name {
-  background-color: #1abc9c;
-}
-
-.products-item:hover .product-price {
-  background-color: #7fd9c7;
-}
-
-.products-item:hover .product-price {
-  background-color: #7fd9c7;
 }
 
 .latest-news {
