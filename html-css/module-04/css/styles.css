@@ -129,6 +129,10 @@ img {
   margin-right: 0;
 }
 
+.products-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
 .products-item a {
   display: block;
 }
@@ -208,7 +212,7 @@ img {
   font-size: 48px;
   font-weight: 900;
   line-height: 32px;
-  padding-top: 77px;
+  padding-top: 107px;
   color: #555252;
   text-transform: uppercase;
   margin: 0 auto;
@@ -281,7 +285,7 @@ img {
   color: #ffffff;
   text-transform: capitalize;
   background-color: #4ec6ab;
-  border: 1px solid #4ec6ab;
+  border: none;
   border-radius: 2px;
   cursor: pointer;
 }
