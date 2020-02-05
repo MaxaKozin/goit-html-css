@@ -72,11 +72,11 @@ img {
 
 .page-navigation-item {
   float: right;
-  padding: 0 17px 0 17px;
+  margin-right: 34px;
 }
 
 .page-navigation-item:first-child {
-  padding-right: 0;
+    margin-right: 0px;
 }
 
 .nav-buttons {
@@ -119,7 +119,6 @@ img {
 }
 .products-item {
   width: 255px;
-  height: 322px;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -138,19 +137,10 @@ img {
 }
 
 .photo-link {
-  height: 282px;
-  width: 255px;
   background-color: #e9f0fd;
 }
 
-.photo-link img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .name-price {
-  text-decoration: none;
-  display: block;
   background-color: #323232;
   margin: 0;
   padding: 0;
@@ -158,19 +148,20 @@ img {
 
 .product-name {
   float: left;
-  font-family: "Roboto", sans-serif;
-  padding-left: 14px;
-  padding-top: 4px;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 32px;
   width: 201px;
-  height: 40px;
   margin: 0;
-  color: #ffffff;
+}
 
+.name-link {
+  text-decoration: none;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: left;
+  font-family: "Roboto", sans-serif;
+  padding-left: 14px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 40px;
 }
 
 .product-price {
@@ -178,12 +169,10 @@ img {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding-left: 12px;
-  padding-top: 4px;
   font-size: 18px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 40px;
   width: 54px;
-  height: 40px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.439);
 }
@@ -194,7 +183,7 @@ img {
 
 .latest-news {
   margin: 0;
-  padding: 0;
+  padding: 0 0 45px 0;
 }
 
 .header-news {
@@ -267,15 +256,20 @@ img {
   display: block;
   padding: 0;
   width: 160px;
-  height: 51px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 300;
-  color: #ffffff;
-  text-transform: capitalize;
   background-color: #4ec6ab;
   border: none;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.rmore-btn a{
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 51px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
 }
