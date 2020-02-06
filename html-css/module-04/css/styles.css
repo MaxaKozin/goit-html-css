@@ -76,7 +76,7 @@ img {
 }
 
 .page-navigation-item:first-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .nav-buttons {
@@ -256,14 +256,6 @@ img {
   display: block;
   padding: 0;
   width: 160px;
-  background-color: #4ec6ab;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.rmore-btn a{
-  display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 51px;
@@ -272,4 +264,6 @@ img {
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
+  background-color: #4ec6ab;
+  border-radius: 2px;
 }
