@@ -4,7 +4,6 @@
 
 html {
   box-sizing: border-box;
-  background-color: black;
 }
 
 *,
@@ -144,6 +143,42 @@ img {
   margin-bottom: 100px;
 }
 
+.photography {
+  background-image: url(../img/photography.png);
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
+.web-design {
+  background-image: url(../img/web.png);
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
+.creativity {
+  background-image: url(../img/creativity.png);
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
+.html-css {
+  background-image: url(../img/css-html.png);
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
+.seo {
+  background-image: url(../img/seo.png);
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
+.digital {
+  background-image: url(../img/digital.png);
+  background-repeat: no-repeat;
+  background-position: 24px 0;
+}
+
 .services-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -164,13 +199,6 @@ img {
   font-weight: 400;
   color: #999999;
   margin: 0;
-}
-
-.services-icon {
-  position: absolute;
-  top: 2px;
-  left: 40px;
-  transform: translateX(-50%);
 }
 
 /* team styles */
@@ -264,6 +292,7 @@ img {
 .socials-list {
   border-right: 1px solid rgba(243, 129, 129, 0.5);
   background-color: #fce38a;
+  transition: linear 200ms background-color;
 }
 
 .socials-list:last-child {
@@ -326,11 +355,20 @@ img {
   font-weight: 300;
   font-style: italic;
   color: #cccccc;
+  font-size: 15px;
   padding-left: 12px;
   min-height: 40px;
   min-width: 229px;
   border: 1px solid #e7e7e7;
   border-right: none;
+}
+
+input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+  font-size: 15px;
 }
 
 .input-subscribe {
