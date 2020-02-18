@@ -83,6 +83,7 @@ img {
   background-color: #f38181;
   opacity: 0;
   transition: opacity 200ms linear;
+  margin-top: 10px; ;
 }
 
 .menu-link {
@@ -138,7 +139,6 @@ img {
 .services-item {
   flex: 0 0 380px;
   padding-left: 80px;
-  position: relative;
   margin-bottom: 100px;
 }
 
