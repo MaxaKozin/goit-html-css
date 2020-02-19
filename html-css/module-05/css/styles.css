@@ -170,49 +170,36 @@ button {
 
 /* Slider button styles */
 
-.slider-button-left {
+.slider-box button {
+  padding: 0;
   position: absolute;
-  left: 0;
   top: 50%;
   z-index: 10;
   transform: translateY(-50%);
-}
-
-.slider-button-left button {
   border: none;
   width: 104px;
   height: 104px;
   background-color: rgb(78, 198, 171);
   opacity: 0.65;
-  background-image: url(../svg/angle-left.svg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.slider-button-left {
+  left: 0;
+  background-image: url(../svg/angle-left.svg);
 }
 
 .slider-button-right {
-  position: absolute;
   right: 0;
-  top: 50%;
-  z-index: 10;
-  transform: translateY(-50%);
-}
-
-.slider-button-right button {
-  border: none;
-  width: 104px;
-  height: 104px;
-  background-color: rgb(78, 198, 171);
-  opacity: 0.65;
   background-image: url(../svg/angle-right.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.slider-button-left button:hover {
+.slider-button-left:hover {
   opacity: 1;
 }
 
-.slider-button-right button:hover {
+.slider-button-right:hover {
   opacity: 1;
 }
 
@@ -318,10 +305,10 @@ button {
 
 .hover-effects {
   position: absolute;
-  width: 235px;
-  height: 260px;
   top: 10px;
   left: 10px;
+  right: 10px;
+  bottom: 10px;
   opacity: 0;
   outline: 10px solid rgba(255, 255, 255, 0.55);
   background-color: rgba(0, 0, 0, 0.55);
