@@ -18,11 +18,21 @@ html {
 }
 
 @font-face {
-  font-family: "Wisdom Script Regular";
+  font-family: "Romanesco";
   font-style: normal;
-  font-weight: normal;
-  src: local("Wisdom Script Regular"),
-    url("../fonts/Wisdom Script AI.woff") format("woff");
+  font-weight: 400;
+  src: local("Romanesco"), local("Romanesco-Regular"),
+    url("../fonts/romanesco-v8-latin-regular.woff2") format("woff2"),
+    url("../fonts/romanesco-v8-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin-italic.woff2") format("woff2"),
+    url("../fonts/noto-serif-v8-latin-italic.woff") format("woff");
 }
 
 @font-face {
@@ -52,13 +62,6 @@ html {
     url("../fonts/montserrat-v14-latin-700.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Droid Serif Italic";
-  src: url("../fonts/DroidSerif-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Menu styles */
 
 .page-header {
@@ -75,7 +78,7 @@ html {
 }
 
 .logo {
-  font-family: "Wisdom Script Regular";
+  font-family: "Romanesco";
   font-size: 26px;
   line-height: 41px;
   color: #fed136;
@@ -141,7 +144,7 @@ html {
   padding: 0;
   font-size: 16px;
   color: #777777;
-  font-family: "Droid Serif Italic";
+  font-family: "Noto Serif";
   text-align: center;
 }
 
@@ -296,7 +299,8 @@ html {
   outline: 3px solid #cc0000;
 }
 
-input[name="subject"]:focus:valid, input[name="subject"]:focus:invalid {
+input[name="subject"]:focus:valid,
+input[name="subject"]:focus:invalid {
   outline: none;
 }
 
