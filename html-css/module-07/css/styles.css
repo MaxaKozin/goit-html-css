@@ -278,7 +278,6 @@ html {
   border-radius: 2px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  text-transform: uppercase;
   vertical-align: center;
   padding-left: 20px;
   font-size: 14px;
@@ -289,6 +288,7 @@ html {
 
 .small-inputs input::placeholder {
   color: #bbbbbb;
+  text-transform: uppercase;
 }
 
 .small-inputs input:focus:valid {
@@ -312,7 +312,6 @@ textarea {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 3px;
-  text-transform: uppercase;
   padding-left: 20px;
   padding-top: 16px;
   font-size: 14px;
@@ -323,6 +322,7 @@ textarea {
 
 textarea::placeholder {
   color: #bbbbbb;
+  text-transform: uppercase;
 }
 
 textarea:focus:valid {
