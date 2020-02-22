@@ -159,10 +159,9 @@ html {
 
 .services-item {
   margin: 0;
-  padding: 0;
+  padding: 82px 0;
   flex: 0 0 290px;
   text-align: center;
-  min-height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -281,7 +280,7 @@ html {
   vertical-align: center;
   padding-left: 20px;
   font-size: 14px;
-  color: #bbbbbb;
+  color: #000000;
   font-family: "Montserrat";
   font-weight: 700;
 }
@@ -315,7 +314,7 @@ textarea {
   padding-left: 20px;
   padding-top: 16px;
   font-size: 14px;
-  color: #bbbbbb;
+  color: #000000;
   font-family: "Montserrat";
   font-weight: 700;
 }
