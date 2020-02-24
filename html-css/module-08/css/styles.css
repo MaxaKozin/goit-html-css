@@ -44,8 +44,6 @@ img {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: stretch;
-  min-height: 170px;
   font-family: "Montserrat";
   font-weight: 700;
   margin-bottom: 34px;
@@ -63,7 +61,6 @@ img {
 
 .login-group {
   padding: 0;
-  margin: 0;
   display: flex;
   list-style: none;
   justify-content: center;
