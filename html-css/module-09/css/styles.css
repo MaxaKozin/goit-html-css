@@ -1,0 +1,264 @@
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.promo {
+  min-height: 540px;
+  background-color: #1a1915;
+  background-image: url(../img/backgroundimg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header {
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.login,
+.signup {
+  display: block;
+  width: 96px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 32px;
+}
+
+.signup {
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+}
+
+.promo-header {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo-descr {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+}
+
+.find-btn {
+  display: block;
+  width: 280px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff4e50;
+}
+
+.partners-header {
+  font-size: 22px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.partner-photo {
+  width: 122px;
+  position: relative;
+}
+
+.partner-photo::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+
+.tv-ico::after {
+  background-color: #ff4e50;
+  background-image: url(../svg/ico1.svg);
+}
+
+.science-ico::after {
+  background-color: #ffa507;
+  background-image: url(../svg/ico2.svg);
+}
+
+.cup-ico::after {
+  background-color: #1cd7ad;
+  background-image: url(../svg/ico3.svg);
+}
+
+.plane-ico::after {
+  background-color: #4e73db;
+  background-image: url(../svg/ico4.svg);
+}
+
+.partner-photo img {
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+
+.partner-name {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+.partner-info {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+  width: 236px;
+}
+
+.lmorepartners {
+  display: block;
+  width: 280px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 36px;
+  color: #ff4e50;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  margin: 30px 0 57px;
+}
+
+@media (max-width: 767.98px) {
+  .page-header {
+    margin-bottom: 34px;
+  }
+
+  .login-box {
+    margin-bottom: 110px;
+  }
+
+  .partner-card:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 969.98px) {
+  .partner-card:not(:nth-last-of-type(-n + 2)) {
+    margin-bottom: 60px;
+  }
+
+  .partner-card:nth-of-type(2n + 1) {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .partner-card:nth-of-type(2n) {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo {
+    min-height: 700px;
+  }
+
+  .page-header {
+    margin-bottom: 72px;
+    padding: 38px 0;
+  }
+
+  .promo-header {
+    padding: 38px 0;
+    font-size: 52px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .promo-descr {
+    font-size: 24px;
+    margin: 0 0 38px 0;
+  }
+
+  .find-btn {
+    width: 225px;
+  }
+
+  .partners {
+    padding-top: 74px;
+  }
+
+  .partners-header {
+    margin: 0;
+    padding: 0 0 36px 0;
+  }
+
+  .lmorepartners {
+    margin: 40px 0;
+    width: 192px;
+  }
+}
+
+@media (min-width: 970px) {
+  
+  .partner-info {
+    width: 220px;
+  }
+
+  .partner-card:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+
+  .lmorepartners {
+    margin: 38px auto 73px auto;
+  }
+}
