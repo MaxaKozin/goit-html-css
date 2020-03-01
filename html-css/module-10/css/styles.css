@@ -2,6 +2,52 @@
   outline: 1px solid red;
 } */
 
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaushan Script"), local("KaushanScript-Regular"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"); 
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+    url("../fonts/roboto-v20-latin-300italic.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-300italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -57,7 +103,8 @@ img {
   min-height: 1000px;
   background-image: -webkit-gradient(
       linear,
-      left bottom, left top,
+      left bottom,
+      left top,
       from(rgba(251, 227, 137, 0.9)),
       to(rgba(243, 129, 129, 0.9))
     ),
@@ -83,7 +130,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   min-height: 87px;
 }
 
@@ -100,7 +147,7 @@ img {
   display: flex;
   flex-basis: 490px;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-right: 50px;
 }
 
@@ -170,9 +217,9 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 100px;
 }
 
@@ -208,7 +255,8 @@ img {
 
 /* services styles */
 
-.services__header, .header {
+.services__header,
+.header {
   margin: 0 auto;
   text-align: center;
   color: #333333;
@@ -217,7 +265,7 @@ img {
 
 .header__first-line {
   display: block;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script";
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 18px;
@@ -249,7 +297,7 @@ img {
 
 .features__card {
   -webkit-box-flex: 0;
-          flex: 0 0 380px;
+  flex: 0 0 380px;
   padding-left: 80px;
   margin-bottom: 100px;
 }
@@ -324,12 +372,13 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
-.team__item, .members__card {
+.team__item,
+.members__card {
   -webkit-box-flex: 0;
-          flex: 0 0 380px;
+  flex: 0 0 380px;
   cursor: pointer;
 }
 
@@ -364,7 +413,8 @@ img {
 .members__effects {
   background-image: -webkit-gradient(
     linear,
-    left bottom, left top,
+    left bottom,
+    left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
   );
@@ -383,20 +433,20 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
-.members__card:hover .members__effects{
+.members__card:hover .members__effects {
   opacity: 1;
   -webkit-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
 .members__card:hover .members__photo {
   -webkit-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
 .members__socials {
@@ -416,7 +466,7 @@ img {
 }
 
 .socials__list:hover {
-  background-color:#f38181;
+  background-color: #f38181;
 }
 
 .socials__link {
@@ -425,9 +475,9 @@ img {
   width: 56px;
   height: 56px;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .socials__icon {
@@ -445,10 +495,10 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   min-height: 63px;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .footer__copyright {
@@ -467,7 +517,7 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .footer__input {
@@ -537,14 +587,15 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .promo {
-     background-image: -webkit-gradient(
+    background-image: -webkit-gradient(
         linear,
-        left bottom, left top,
+        left bottom,
+        left top,
         from(rgba(251, 227, 137, 0.9)),
         to(rgba(243, 129, 129, 0.9))
       ),
       url(../img/banner@x2.jpg);
-     background-image: linear-gradient(
+    background-image: linear-gradient(
         to top,
         rgba(251, 227, 137, 0.9),
         rgba(243, 129, 129, 0.9)
