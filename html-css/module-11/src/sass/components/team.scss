@@ -1,0 +1,127 @@
+.team__description {
+  margin: 0 auto 92px auto;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: $secondary-dark;
+  text-align: center;
+  max-width: 980px;
+}
+
+.team__list {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.team__item,
+.members__card {
+  -webkit-box-flex: 0;
+  flex: 0 0 380px;
+  cursor: pointer;
+
+  &:hover .members__effects {
+    opacity: 1;
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+
+  &:hover .members__photo {
+    -webkit-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+}
+
+.members__image {
+  position: relative;
+  background-color: #95e1d3;
+}
+
+.members__photo {
+  -webkit-transition: linear 200ms transform;
+  transition: linear 200ms transform;
+}
+
+.members__name {
+  text-transform: uppercase;
+  text-align: center;
+  color: $main-dark;
+}
+
+.members__position {
+  @extend %input-font;
+  text-align: center;
+  color: $secondary-dark;
+}
+
+.members__effects {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transition: linear 200ms opacity, linear 200ms transform;
+  transition: linear 200ms opacity, linear 200ms transform;
+  opacity: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.members__socials {
+  display: -webkit-box;
+  display: flex;
+}
+
+.socials__list {
+  border-right: 1px solid rgba(243, 129, 129, 0.5);
+  background-color: $accent-color;
+  -webkit-transition: linear 200ms background-color;
+  transition: linear 200ms background-color;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  &:hover {
+    background-color: $secondary-accent;
+  }
+
+  &:hover .socials__icon {
+    fill: $main-white;
+  }
+}
+
+.socials__link {
+  display: -webkit-box;
+  display: flex;
+  width: 56px;
+  height: 56px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.socials__icon {
+  fill: $secondary-accent;
+  width: 26px;
+  height: 26px;
+}
