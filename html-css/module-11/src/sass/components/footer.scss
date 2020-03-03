@@ -35,30 +35,6 @@
   border: 1px solid $border-light;
   border-right: none;
   
-  &::-webkit-input-placeholder {
-    @extend %input-font;
-    color: $secondary-light;
-    font-size: 15px;
-  }
-  
-  &::-moz-placeholder {
-    @extend %input-font;
-    color: $secondary-light;
-    font-size: 15px;
-  }
-  
-  &:-ms-input-placeholder {
-    @extend %input-font;
-    color: $secondary-light;
-    font-size: 15px;
-  }
-  
-  &::-ms-input-placeholder {
-    @extend %input-font;
-    color: $secondary-light;
-    font-size: 15px;
-  }
-  
   &::placeholder {
     @extend %input-font;
     color: $secondary-light;
